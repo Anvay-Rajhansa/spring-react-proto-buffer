@@ -1,0 +1,14 @@
+package proto;
+
+option java_package = "org.protobuff.demo.model";
+option java_outer_classname = "StudentProto";
+
+message Student {
+    required int32 id = 1;
+    required string firstName = 2;
+    required string lastName = 3;
+}
+
+message StudentCollection {
+    repeated Student students = 1;
+}
